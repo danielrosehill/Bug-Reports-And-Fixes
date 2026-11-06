@@ -91,6 +91,6 @@ Tested in this reproduction: it recovered Z2M from the real failed state in 4 se
 | [zigbee2mqtt/hassio-zigbee2mqtt#760](https://github.com/zigbee2mqtt/hassio-zigbee2mqtt/issues/760) | Closed (stale) | SLZB-06, same symptom |
 | [home-assistant/supervisor#7190](https://github.com/home-assistant/supervisor/issues/7190) | Open, no replies | Same failure, asks for a notification and backoff |
 
-## Related, separate problem
+## Earlier disconnects
 
-Z2M also dropped the coordinator with `read ECONNRESET` on 2026-11-04 at 10:45:19 and 11:55:42, recovering through the watchdog each time. This matches [Koenkk/zigbee2mqtt#33574](https://github.com/Koenkk/zigbee2mqtt/issues/33574) (Ember TCP adapter on 2.14.3-1). The journal covers 2026-10-30 onward and shows no such errors before the update to 2.14.3 on 2026-11-02, but that is only three days of history.
+Z2M also dropped the coordinator with `read ECONNRESET` on 2026-11-04 at 10:45:19 and 11:55:42, and recovered through the watchdog each time. Cables in the same cabinet were being moved at those times, so these are not evidence of a Z2M fault. They also show the other side of this issue: a short interruption recovers by itself, and only one lasting longer than the watchdog's restarts does not.
