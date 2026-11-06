@@ -43,7 +43,10 @@ Unplugging one cable is enough. With a PoE coordinator, that cuts both its netwo
 | 15:13:41 | Final exit, code 1. No restart follows; add-on state `error` |
 | ~15:16:13 | Coordinator boots after the cable is reconnected |
 | 15:16:38 | Coordinator answering, port 6638 open, no client on the Zigbee socket, add-on still `error` |
-| 15:20:07 | Latest check when this report was published: coordinator up 232 s, add-on still `error`, bridge `off` |
+| 15:21:28 | More than 5 minutes after the coordinator returned: add-on still `error`, no new start attempts, no client on the Zigbee socket |
+| 15:21:33 | Workaround automation (off during the test) turned back on |
+| 15:25:00 | Automation fires on its 5-minute check and starts the add-on |
+| 15:25:04 | `Zigbee2MQTT started!`, 24 devices joined |
 
 The same sequence happened unplanned earlier that day: Z2M stopped at 11:54:18 and the watchdog made 10 restarts by 11:55:27. The coordinator was back at about 13:07, and Z2M stayed down until it was started by hand at 14:55. Zigbee was down for 3 hours, including 1 h 47 min with a healthy coordinator.
 
@@ -76,7 +79,7 @@ Three behaviours combine:
 
 The coordinator check uses an entity from the SMLIGHT integration. With other hardware, use any sensor that shows the coordinator is reachable.
 
-Before this reproduction it had only been tested without an outage: it does nothing while the bridge is up, and its action is a no-op on a running add-on. Recovery from a real outage has not yet been tested.
+Tested in this reproduction: it recovered Z2M from the real failed state in 4 seconds, on its 5-minute check. It was switched off when the coordinator returned, so its other trigger, the coordinator coming back, has not been exercised. It also does nothing while the bridge is up, and its action is a no-op on a running add-on.
 
 ## Prior reports
 
