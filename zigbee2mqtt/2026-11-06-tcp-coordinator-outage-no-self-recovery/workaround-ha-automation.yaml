@@ -1,0 +1,43 @@
+# Zigbee2MQTT auto-recovery after a coordinator outage.
+#
+# Why this exists: Z2M exits when it cannot reach the SLZB-MR3U at
+# tcp://10.0.0.9:6638, and the Supervisor watchdog restarts it at most 10 times
+# per 30 min. Z2M fails in ~3.5 s, so those 10 are spent in about a minute, and
+# the watchdog never retries afterwards. Any coordinator outage longer than
+# that left Z2M dead until someone started it by hand (2026-11-06: 3 h down).
+#
+# Start Z2M when the bridge has been offline for 2 min and the coordinator is
+# reachable. Fires the moment the coordinator returns, and re-checks every
+# 5 min, which also covers Z2M being down after an HA or host boot.
+#
+# hassio.app_start is a no-op on a running app, so a false trigger is harmless.
+#
+# To keep Z2M stopped on purpose (coordinator firmware flash, etc.), turn this
+# automation off first, or it will start Z2M again within 5 min.
+
+automation:
+  - id: zigbee2mqtt_auto_recover
+    alias: Zigbee2MQTT — start again after coordinator outage
+    description: >-
+      Starts the Zigbee2MQTT add-on when its bridge has been offline for 2
+      minutes and the SLZB-MR3U coordinator is reachable. Covers the case where
+      the Supervisor watchdog has used up its 10 restarts per 30 minutes.
+    mode: single
+    triggers:
+      - trigger: state
+        entity_id: binary_sensor.slzb_mr3u_ethernet
+        to: "on"
+      - trigger: time_pattern
+        minutes: "/5"
+    conditions:
+      - condition: state
+        entity_id: binary_sensor.zigbee2mqtt_bridge_connection_state
+        state: "off"
+        for: "00:02:00"
+      - condition: state
+        entity_id: binary_sensor.slzb_mr3u_ethernet
+        state: "on"
+    actions:
+      - action: hassio.app_start
+        data:
+          app: 45df7312_zigbee2mqtt

@@ -1,0 +1,22 @@
+[2026-11-06 15:13:39] info: 	z2m: Logging to console, file (filename: log.log)
+[2026-11-06 15:13:39] info: 	z2m: External JS (converters/extensions) is disabled
+[2026-11-06 15:13:39] info: 	z2m: Starting Zigbee2MQTT version 2.14.3 (commit #unknown)
+[2026-11-06 15:13:39] info: 	z2m: Starting zigbee-herdsman (11.2.0)
+[2026-11-06 15:13:39] info: 	zh:ember: Using default stack config.
+[2026-11-06 15:13:39] info: 	zh:ember: ======== Ember Adapter Starting ========
+[2026-11-06 15:13:39] info: 	zh:ember:ezsp: ======== EZSP starting ========
+[2026-11-06 15:13:39] info: 	zh:ember:uart:ash: ======== ASH Adapter reset ========
+[2026-11-06 15:13:41] error: 	zh:adapter:transport: TCP socket error: Error: connect EHOSTUNREACH <coordinator-ip>:6638
+[2026-11-06 15:13:41] error: 	zh:ember:uart:ash: Failed to init port with error Error: connect EHOSTUNREACH <coordinator-ip>:6638
+[2026-11-06 15:13:41] error: 	z2m: Error while starting zigbee-herdsman
+[2026-11-06 15:13:41] error: 	z2m: Failed to start zigbee-herdsman
+[2026-11-06 15:13:41] error: 	z2m: Check https://www.zigbee2mqtt.io/guide/installation/20_zigbee2mqtt-fails-to-start_crashes-runtime.html for possible solutions
+[2026-11-06 15:13:41] error: 	z2m: Exiting...
+[2026-11-06 15:13:41] error: 	z2m: Error: Failed to start EZSP layer with status=HOST_FATAL_ERROR.
+    at EmberAdapter.initEzsp (/app/node_modules/.pnpm/zigbee-herdsman@11.2.0_supports-color@7.2.0/node_modules/zigbee-herdsman/src/adapter/ember/adapter/emberAdapter.ts:677:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async EmberAdapter.start (/app/node_modules/.pnpm/zigbee-herdsman@11.2.0_supports-color@7.2.0/node_modules/zigbee-herdsman/src/adapter/ember/adapter/emberAdapter.ts:1558:24)
+    at async Controller.start (/app/node_modules/.pnpm/zigbee-herdsman@11.2.0_supports-color@7.2.0/node_modules/zigbee-herdsman/src/controller/controller.ts:146:29)
+    at async Zigbee.start (/app/lib/zigbee.ts:70:27)
+    at async Controller.start (/app/lib/controller.ts:117:29)
+    at async start (/app/index.js:156:5)

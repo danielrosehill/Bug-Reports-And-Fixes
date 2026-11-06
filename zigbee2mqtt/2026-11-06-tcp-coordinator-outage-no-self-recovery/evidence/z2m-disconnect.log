@@ -1,0 +1,30 @@
+[2026-11-06 15:12:58] error: 	zh:adapter:transport: TCP socket error: Error: read ETIMEDOUT
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash: ASH COUNTERS since last clear:
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash:   Total frames: RX=334, TX=436
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash:   Cancelled   : RX=0, TX=0
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash:   DATA frames : RX=333, TX=101
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash:   DATA bytes  : RX=6928, TX=2138
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash:   Retry frames: RX=0, TX=0
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash:   ACK frames  : RX=0, TX=334
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash:   NAK frames  : RX=0, TX=0
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash:   nRdy frames : RX=0, TX=0
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash:   CRC errors      : RX=0
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash:   Comm errors     : RX=0
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash:   Length < minimum: RX=0
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash:   Length > maximum: RX=0
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash:   Bad controls    : RX=0
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash:   Bad lengths     : RX=0
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash:   Bad ACK numbers : RX=0
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash:   Out of buffers  : RX=0
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash:   Retry dupes     : RX=0
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash:   Out of sequence : RX=0
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash:   ACK timeouts    : RX=0
+[2026-11-06 15:12:58] info: 	zh:ember:uart:ash: ======== ASH stopped ========
+[2026-11-06 15:12:58] info: 	zh:ember:ezsp: ======== EZSP stopped ========
+[2026-11-06 15:12:58] info: 	zh:ember: ======== Ember Adapter Stopped ========
+[2026-11-06 15:12:58] error: 	z2m: Adapter disconnected, stopping
+[2026-11-06 15:12:58] info: 	z2m: Stopping Zigbee2MQTT (restart=false, code=2, signal=undefined)
+[2026-11-06 15:12:58] info: 	z2m: Disconnecting from MQTT server
+[2026-11-06 15:12:58] info: 	z2m: Stopping zigbee-herdsman...
+[2026-11-06 15:12:58] info: 	z2m: Stopped zigbee-herdsman
+[2026-11-06 15:12:58] info: 	z2m: Stopped Zigbee2MQTT
