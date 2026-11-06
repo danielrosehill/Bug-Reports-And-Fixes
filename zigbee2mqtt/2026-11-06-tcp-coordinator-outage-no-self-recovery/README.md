@@ -81,6 +81,8 @@ The coordinator check uses an entity from the SMLIGHT integration. With other ha
 
 Tested in this reproduction: it recovered Z2M from the real failed state in 4 seconds, on its 5-minute check. It was switched off when the coordinator returned, so its other trigger, the coordinator coming back, has not been exercised. It also does nothing while the bridge is up, and its action is a no-op on a running add-on.
 
+A version for general use, with install notes, is in [Zigbee2MQTT-Coordinator-Auto-Recovery](https://github.com/danielrosehill/Zigbee2MQTT-Coordinator-Auto-Recovery).
+
 ## Prior reports
 
 | Issue | State | Notes |
