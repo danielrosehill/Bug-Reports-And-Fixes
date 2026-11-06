@@ -1,7 +1,7 @@
 # Zigbee2MQTT auto-recovery after a coordinator outage.
 #
 # Why this exists: Z2M exits when it cannot reach the SLZB-MR3U at
-# tcp://10.0.0.9:6638, and the Supervisor watchdog restarts it at most 10 times
+# tcp://<coordinator-ip>:6638, and the Supervisor watchdog restarts it at most 10 times
 # per 30 min. Z2M fails in ~3.5 s, so those 10 are spent in about a minute, and
 # the watchdog never retries afterwards. Any coordinator outage longer than
 # that left Z2M dead until someone started it by hand (2026-11-06: 3 h down).
