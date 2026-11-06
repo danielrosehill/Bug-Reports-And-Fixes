@@ -3,7 +3,7 @@
 **Date:** 2026-11-06
 **Status:** Confirmed (reproduced on demand)
 **Severity:** High. A brief loss of a network coordinator leaves the whole Zigbee network down until someone starts the add-on by hand.
-**Upstream:** not yet filed. Drafts are in [`upstream-drafts/`](upstream-drafts/).
+**Upstream:** filed as [Koenkk/zigbee2mqtt#33622](https://github.com/Koenkk/zigbee2mqtt/issues/33622), with a [comment on home-assistant/supervisor#7190](https://github.com/home-assistant/supervisor/issues/7190#issuecomment-6685803456). Posted text is in [`upstream-drafts/`](upstream-drafts/).
 
 ## Summary
 
