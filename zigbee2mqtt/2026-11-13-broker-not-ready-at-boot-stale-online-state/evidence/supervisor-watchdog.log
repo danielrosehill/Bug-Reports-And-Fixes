@@ -1,0 +1,77 @@
+2026-11-13 19:13:16.229+02:00 INFO (MainThread) [supervisor.docker.interface] Attaching to ghcr.io/zigbee2mqtt/zigbee2mqtt-amd64 with version 2.14.3-1
+2026-11-13 19:13:16.234+02:00 ERROR (MainThread) [supervisor.apps.app] App Zigbee2MQTT exited with non-zero exit code 255
+2026-11-13 19:13:53.753+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:13:53.755+02:00 INFO (MainThread) [supervisor.docker.manager] Cleaning app_45df7312_zigbee2mqtt application
+2026-11-13 19:13:54.209+02:00 INFO (MainThread) [supervisor.docker.app] Starting Docker app ghcr.io/zigbee2mqtt/zigbee2mqtt-amd64 with version 2.14.3-1
+2026-11-13 19:13:54.502+02:00 INFO (MainThread) [supervisor.api.middleware.security] /supervisor/info access from 45df7312_zigbee2mqtt
+2026-11-13 19:14:01.911+02:00 ERROR (MainThread) [supervisor.apps.app] App Zigbee2MQTT exited with non-zero exit code 1
+2026-11-13 19:14:01.914+02:00 WARNING (MainThread) [supervisor.apps.app] Watchdog found app Zigbee2MQTT exited with code 1, restarting...
+2026-11-13 19:14:01.916+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:01.916+02:00 INFO (MainThread) [supervisor.docker.manager] Cleaning app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:02.085+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:02.394+02:00 INFO (MainThread) [supervisor.docker.app] Starting Docker app ghcr.io/zigbee2mqtt/zigbee2mqtt-amd64 with version 2.14.3-1
+2026-11-13 19:14:02.708+02:00 INFO (MainThread) [supervisor.api.middleware.security] /supervisor/info access from 45df7312_zigbee2mqtt
+2026-11-13 19:14:07.499+02:00 ERROR (MainThread) [supervisor.apps.app] App Zigbee2MQTT exited with non-zero exit code 1
+2026-11-13 19:14:07.500+02:00 WARNING (MainThread) [supervisor.apps.app] Watchdog found app Zigbee2MQTT exited with code 1, restarting...
+2026-11-13 19:14:07.501+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:07.502+02:00 INFO (MainThread) [supervisor.docker.manager] Cleaning app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:07.574+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:07.803+02:00 INFO (MainThread) [supervisor.docker.app] Starting Docker app ghcr.io/zigbee2mqtt/zigbee2mqtt-amd64 with version 2.14.3-1
+2026-11-13 19:14:07.905+02:00 INFO (MainThread) [supervisor.api.middleware.security] /supervisor/info access from 45df7312_zigbee2mqtt
+2026-11-13 19:14:11.532+02:00 ERROR (MainThread) [supervisor.apps.app] App Zigbee2MQTT exited with non-zero exit code 1
+2026-11-13 19:14:11.534+02:00 WARNING (MainThread) [supervisor.apps.app] Watchdog found app Zigbee2MQTT exited with code 1, restarting...
+2026-11-13 19:14:11.535+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:11.535+02:00 INFO (MainThread) [supervisor.docker.manager] Cleaning app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:11.621+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:11.798+02:00 INFO (MainThread) [supervisor.docker.app] Starting Docker app ghcr.io/zigbee2mqtt/zigbee2mqtt-amd64 with version 2.14.3-1
+2026-11-13 19:14:11.874+02:00 INFO (MainThread) [supervisor.api.middleware.security] /supervisor/info access from 45df7312_zigbee2mqtt
+2026-11-13 19:14:15.513+02:00 ERROR (MainThread) [supervisor.apps.app] App Zigbee2MQTT exited with non-zero exit code 1
+2026-11-13 19:14:15.514+02:00 WARNING (MainThread) [supervisor.apps.app] Watchdog found app Zigbee2MQTT exited with code 1, restarting...
+2026-11-13 19:14:15.515+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:15.515+02:00 INFO (MainThread) [supervisor.docker.manager] Cleaning app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:15.574+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:15.815+02:00 INFO (MainThread) [supervisor.docker.app] Starting Docker app ghcr.io/zigbee2mqtt/zigbee2mqtt-amd64 with version 2.14.3-1
+2026-11-13 19:14:15.910+02:00 INFO (MainThread) [supervisor.api.middleware.security] /supervisor/info access from 45df7312_zigbee2mqtt
+2026-11-13 19:14:19.361+02:00 ERROR (MainThread) [supervisor.apps.app] App Zigbee2MQTT exited with non-zero exit code 1
+2026-11-13 19:14:19.363+02:00 WARNING (MainThread) [supervisor.apps.app] Watchdog found app Zigbee2MQTT exited with code 1, restarting...
+2026-11-13 19:14:19.364+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:19.365+02:00 INFO (MainThread) [supervisor.docker.manager] Cleaning app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:19.424+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:19.638+02:00 INFO (MainThread) [supervisor.docker.app] Starting Docker app ghcr.io/zigbee2mqtt/zigbee2mqtt-amd64 with version 2.14.3-1
+2026-11-13 19:14:19.719+02:00 INFO (MainThread) [supervisor.api.middleware.security] /supervisor/info access from 45df7312_zigbee2mqtt
+2026-11-13 19:14:23.396+02:00 ERROR (MainThread) [supervisor.apps.app] App Zigbee2MQTT exited with non-zero exit code 1
+2026-11-13 19:14:23.399+02:00 WARNING (MainThread) [supervisor.apps.app] Watchdog found app Zigbee2MQTT exited with code 1, restarting...
+2026-11-13 19:14:23.401+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:23.402+02:00 INFO (MainThread) [supervisor.docker.manager] Cleaning app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:23.466+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:23.703+02:00 INFO (MainThread) [supervisor.docker.app] Starting Docker app ghcr.io/zigbee2mqtt/zigbee2mqtt-amd64 with version 2.14.3-1
+2026-11-13 19:14:23.773+02:00 INFO (MainThread) [supervisor.api.middleware.security] /supervisor/info access from 45df7312_zigbee2mqtt
+2026-11-13 19:14:27.394+02:00 ERROR (MainThread) [supervisor.apps.app] App Zigbee2MQTT exited with non-zero exit code 1
+2026-11-13 19:14:27.401+02:00 WARNING (MainThread) [supervisor.apps.app] Watchdog found app Zigbee2MQTT exited with code 1, restarting...
+2026-11-13 19:14:27.403+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:27.404+02:00 INFO (MainThread) [supervisor.docker.manager] Cleaning app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:27.471+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:27.659+02:00 INFO (MainThread) [supervisor.docker.app] Starting Docker app ghcr.io/zigbee2mqtt/zigbee2mqtt-amd64 with version 2.14.3-1
+2026-11-13 19:14:27.735+02:00 INFO (MainThread) [supervisor.api.middleware.security] /supervisor/info access from 45df7312_zigbee2mqtt
+2026-11-13 19:14:31.548+02:00 ERROR (MainThread) [supervisor.apps.app] App Zigbee2MQTT exited with non-zero exit code 1
+2026-11-13 19:14:31.550+02:00 WARNING (MainThread) [supervisor.apps.app] Watchdog found app Zigbee2MQTT exited with code 1, restarting...
+2026-11-13 19:14:31.551+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:31.552+02:00 INFO (MainThread) [supervisor.docker.manager] Cleaning app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:31.614+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:31.787+02:00 INFO (MainThread) [supervisor.docker.app] Starting Docker app ghcr.io/zigbee2mqtt/zigbee2mqtt-amd64 with version 2.14.3-1
+2026-11-13 19:14:31.866+02:00 INFO (MainThread) [supervisor.api.middleware.security] /supervisor/info access from 45df7312_zigbee2mqtt
+2026-11-13 19:14:35.449+02:00 ERROR (MainThread) [supervisor.apps.app] App Zigbee2MQTT exited with non-zero exit code 1
+2026-11-13 19:14:35.451+02:00 WARNING (MainThread) [supervisor.apps.app] Watchdog found app Zigbee2MQTT exited with code 1, restarting...
+2026-11-13 19:14:35.452+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:35.453+02:00 INFO (MainThread) [supervisor.docker.manager] Cleaning app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:35.499+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:35.677+02:00 INFO (MainThread) [supervisor.docker.app] Starting Docker app ghcr.io/zigbee2mqtt/zigbee2mqtt-amd64 with version 2.14.3-1
+2026-11-13 19:14:35.760+02:00 INFO (MainThread) [supervisor.api.middleware.security] /supervisor/info access from 45df7312_zigbee2mqtt
+2026-11-13 19:14:39.484+02:00 ERROR (MainThread) [supervisor.apps.app] App Zigbee2MQTT exited with non-zero exit code 1
+2026-11-13 19:14:39.486+02:00 WARNING (MainThread) [supervisor.apps.app] Watchdog found app Zigbee2MQTT exited with code 1, restarting...
+2026-11-13 19:14:39.487+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:39.487+02:00 INFO (MainThread) [supervisor.docker.manager] Cleaning app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:39.540+02:00 INFO (MainThread) [supervisor.docker.manager] Stopping app_45df7312_zigbee2mqtt application
+2026-11-13 19:14:39.718+02:00 INFO (MainThread) [supervisor.docker.app] Starting Docker app ghcr.io/zigbee2mqtt/zigbee2mqtt-amd64 with version 2.14.3-1
+2026-11-13 19:14:39.792+02:00 INFO (MainThread) [supervisor.api.middleware.security] /supervisor/info access from 45df7312_zigbee2mqtt
+2026-11-13 19:14:43.442+02:00 ERROR (MainThread) [supervisor.apps.app] App Zigbee2MQTT exited with non-zero exit code 1

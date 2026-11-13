@@ -1,0 +1,10 @@
+# Excerpt: Zigbee2MQTT add-on log, final (10th watchdog) start, 2026-11-13 (UTC+2).
+# Broker IP replaced with <broker>. The coordinator connected fine on every attempt;
+# only MQTT failed.
+[2026-11-13 19:14:42] info: 	z2m: Currently 24 devices are joined.
+[2026-11-13 19:14:42] info: 	z2m: Connecting to MQTT server at mqtt://<broker>:1883
+[2026-11-13 19:14:42] error: 	z2m: MQTT failed to connect, exiting... (connect ECONNREFUSED <broker>:1883)
+[2026-11-13 19:14:42] info: 	z2m: Stopping zigbee-herdsman...
+[2026-11-13 19:14:43] info: 	zh:controller: Wrote coordinator backup to '/config/zigbee2mqtt/coordinator_backup.json'
+[2026-11-13 19:14:43] info: 	zh:ember: ======== Ember Adapter Stopped ========
+[2026-11-13 19:14:43] info: 	z2m: Stopped zigbee-herdsman

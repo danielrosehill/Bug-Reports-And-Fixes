@@ -83,6 +83,8 @@ Tested in this reproduction: it recovered Z2M from the real failed state in 4 se
 
 A version for general use, with install notes, is in [Zigbee2MQTT-Coordinator-Auto-Recovery](https://github.com/danielrosehill/Zigbee2MQTT-Coordinator-Auto-Recovery).
 
+**Update 2026-11-13 (v2):** this version, gated only on the bridge sensor, failed to fire during a 2-hour outage after a host reboot. Z2M started before the external MQTT broker, exited, and never connected, so the retained `bridge/state: online` from before the reboot kept the bridge sensor **on** while Z2M was dead. The workaround file now also gates on `binary_sensor.zigbee2mqtt_running` (Supervisor; disabled by default, so enable it) and checks every 2 minutes. See [2026-11-13-broker-not-ready-at-boot-stale-online-state](../2026-11-13-broker-not-ready-at-boot-stale-online-state/).
+
 ## Prior reports
 
 | Issue | State | Notes |
