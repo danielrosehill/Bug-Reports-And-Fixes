@@ -4,7 +4,7 @@
 **Status:** Confirmed (observed in production; root cause traced in logs and Z2M source)
 **Severity:** High. An ordinary host reboot left the whole Zigbee network down for about 2 hours, with no notification, while Home Assistant's own bridge sensor said Zigbee2MQTT was connected.
 **Related:** [2026-11-06: no self-recovery after a coordinator outage](../2026-11-06-tcp-coordinator-outage-no-self-recovery/). Same Supervisor watchdog limit, different trigger, plus a second failure that hides it.
-**Upstream:** not filed yet.
+**Upstream:** filed 2026-11-13 as [Koenkk/zigbee2mqtt#33692](https://github.com/Koenkk/zigbee2mqtt/issues/33692), with a [follow-up comment on home-assistant/supervisor#7190](https://github.com/home-assistant/supervisor/issues/7190#issuecomment-6862946883). Posted text is in [`upstream-drafts/`](upstream-drafts/).
 
 ## Summary
 
