@@ -75,7 +75,7 @@ Verified: with Z2M running, triggering the automation with conditions evaluated 
 
 - **Z2M:** retry the initial MQTT connection (mqtt.js already supports `reconnectPeriod`) instead of exiting, or at least make the startup behaviour match the runtime behaviour. A broker that is late at boot is the normal case on any multi-host setup.
 - **Supervisor:** don't abandon an add-on permanently after the throttle; back off and retry, and raise a repair issue when an add-on with the watchdog on is left in `error` (supervisor#7190).
-- **Home Assistant / Z2M discovery:** the bridge connectivity sensor should not be able to read `on` for a process that isn't running. Options: Z2M publishing `offline` (retained) on clean exit paths where it never connected is impossible by definition, so the fix belongs on the consumer side, for example HA combining the retained state with the add-on running state, or Z2M publishing `bridge/state` with a message expiry so a stale `online` ages out.
+- **Home Assistant / Z2M discovery:** the bridge connectivity sensor should not be able to read `on` for a process that isn't running. Z2M can't clear it itself, because a process that never connects can't publish anything. So the fix belongs elsewhere: Z2M could publish `bridge/state` with an MQTT 5 message expiry so a stale `online` ages out, or Home Assistant could combine the retained state with the add-on's running state.
 
 ## Lesson for anyone debugging this
 
